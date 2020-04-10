@@ -1,3 +1,5 @@
+package Queue;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +15,12 @@ public class Queue<T> {
     public boolean contains(T client){
         return myQueue.contains(client);
     }
-    public void add(T client){
+    public boolean add(T client){
         if(!myQueue.contains(client)) {
             myQueue.add(client);
+            return true;
         }
+        return false;
 
     }
 
@@ -46,6 +50,9 @@ public class Queue<T> {
                 ioHelper.printMessage(client.toString());
             }
         }
+    }
+    public ArrayList<T> getQueueList(){
+        return new ArrayList<>(myQueue);
     }
     public String getQueueName(){
         return queueName;

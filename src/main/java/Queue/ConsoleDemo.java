@@ -1,5 +1,6 @@
+package Queue;
+
 import java.util.ArrayList;
-import java.util.zip.ZipOutputStream;
 
 public class ConsoleDemo {
     private final IOHelper ioHelper;

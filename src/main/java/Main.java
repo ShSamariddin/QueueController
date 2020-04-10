@@ -1,3 +1,6 @@
+import Queue.ConsoleDemo;
+import Queue.IOHelper;
+
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -9,6 +12,7 @@ public class Main {
             IOHelper ioHelper = new IOHelper(scanner, printWriter);
             ConsoleDemo consoleQueue = new ConsoleDemo(ioHelper);
             consoleQueue.runConsoleDemo();
+
         }
     }
 }
